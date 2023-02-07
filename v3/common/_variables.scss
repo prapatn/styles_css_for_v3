@@ -1,0 +1,130 @@
+// Ref': https'://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// 'font-size-root': 20px,
+
+$head-lines: (
+  'h1': 2rem,
+  'h2': 1.5rem,
+  'h3': 1.25rem,
+  'h4': 1rem,
+  'h5': 1rem,
+  'h6': 1rem,
+);
+$height-head-lines: (
+  'h1': 3rem,
+  'h2': 2.25rem,
+  'h3': 1.875rem,
+  'h4': 1.5rem,
+  'h5': 1.5rem,
+  'h6': 1.5rem,
+);
+
+$colors: (
+  'green': #1bb967,
+  'light-green': #52c41a,
+  'green-bg': #1bb96726,
+  'blue': #00aeef,
+  'primary-blue': #2962ff,
+  'blue-facebook': #415dae,
+  'blue-google': #4184f3,
+  'green-line': #00c300,
+  'black': #333333,
+  'dark-grey': #999999,
+  'medium-grey': #d6d8d6,
+  'light-grey': #ebeceb,
+  'very-light-grey': #fbfbfb,
+  'white': #ffffff,
+  'orange': #faad14,
+  'red': #ff4d4f,
+  'red-bg': #ff4d4f26,
+  'transparent': transparent,
+);
+$colors: map-merge(
+  $colors,
+  (
+    'primary': map-get($colors, 'primary-blue'),
+    'secondary': map-get($colors, 'green'),
+    'warning': map-get($colors, 'orange'),
+    'danger': map-get($colors, 'red'),
+  )
+);
+
+$gradients: (
+  'blue': linear-gradient(148.34deg, #00aeef 0%, #008bef 100%),
+);
+
+$buttons: (
+  'blue': (
+    'main': (
+      'color': map-get($colors, 'white'),
+      'bg': map-get($colors, 'blue'),
+    ),
+    'hover': (
+      'color': map-get($colors, 'white'),
+      'bg': map-get($colors, 'blue'),
+    ),
+  ),
+  'green': (
+    'main': (
+      'color': map-get($colors, 'white'),
+      'bg': map-get($colors, 'green'),
+    ),
+    'hover': (
+      'color': map-get($colors, 'white'),
+      'bg': map-get($colors, 'green'),
+    ),
+  ),
+  'white': (
+    'main': (
+      'color': map-get($colors, 'blue'),
+      'bg': map-get($colors, 'white'),
+    ),
+    'hover': (
+      'color': map-get($colors, 'blue'),
+      'bg': map-get($colors, 'white'),
+    ),
+  ),
+);
+
+$outline-buttons: (
+  'blue': (
+    'main': (
+      'color': map-get($colors, 'blue'),
+      'bg': map-get($colors, 'white'),
+    ),
+    'hover': (
+      'color': map-get($colors, 'blue'),
+      'bg': map-get($colors, 'white'),
+    ),
+  ),
+  'dark-grey': (
+    'main': (
+      'color': map-get($colors, 'dark-grey'),
+      'bg': map-get($colors, 'white'),
+    ),
+    'hover': (
+      'color': map-get($colors, 'dark-grey'),
+      'bg': map-get($colors, 'white'),
+    ),
+  ),
+);
+
+$border-color: map-get($colors, 'light-grey');
+
+// Need this to override Bootstrap
+$primary: map-get($colors, 'primary-blue');
+$secondary: map-get($colors, 'green');
+$warning: map-get($colors, 'orange');
+$danger: map-get($colors, 'red');
+
+$font-weights: (normal, 500);
+$font-sizes: (10, 12, 14, 16, 18, 20, 22, 24);
+
+$eq-boxes: ('15': '15%', '20': '20%', '25': '25%', '35': '35%', '40': '40%', '50': '50%', '75': '75%', '100': '100%', '125': '125%');
+
+$custom-lengths: (
+  '075': 0.75rem,
+);
+
+$navbar-height: 64px;
