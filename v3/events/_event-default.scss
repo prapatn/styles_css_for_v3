@@ -1,0 +1,15 @@
+.layout-left {
+  @include media-breakpoint-up(xl) {
+    padding-right: 16px;
+  }
+}
+.layout-right {
+  @include media-breakpoint-up(xl) {
+    padding-left: 28px;
+    padding-top: 28px;
+  }
+}
+.outline-blue {
+  border: 1px solid #00aeef;
+  background-color: #fff;
+}

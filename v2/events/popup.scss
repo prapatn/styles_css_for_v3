@@ -1,0 +1,59 @@
+.container {
+  all: revert;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999999999;
+}
+
+.content {
+  all: revert;
+  width: auto;
+  height: auto;
+  width: 30%;
+  /* padding-right: 50px; */
+  padding-top: 60px;
+  position: relative;
+}
+.event-logo {
+  all: revert;
+  width: 100%;
+  cursor: pointer;
+}
+.icon-close {
+  color: black;
+  background: white;
+  padding: 2px;
+  border-radius: 50%;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .content {
+    width: 50%;
+  }
+  .icon-close {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .content {
+    width: 70%;
+    /* padding-right: 30px; */
+    padding-top: 40px;
+  }
+  .icon-close {
+    font-size: 20px;
+  }
+}

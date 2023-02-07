@@ -1,0 +1,28 @@
+.v2 {
+  .__header-section {
+    color: black;
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px solid #00aae9;
+    line-height: 0.01em;
+    margin: 10px 0 20px;
+    .text-header-section {
+      font-family: Prompt, Tahoma;
+      font-size: 2rem;
+      @media screen and (max-width: 767px) {
+        font-size: 30px !important;
+      }
+      background: #f8f9fa;
+      padding: 0 10px;
+    }
+    .text-header-section-commigs {
+      font-family: Prompt, Tahoma;
+      font-size: 1.5rem;
+      @media screen and (max-width: 767px) {
+        font-size: 30px !important;
+      }
+      background: #f8f9fa;
+      padding: 0 10px;
+    }
+  }
+}

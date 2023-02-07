@@ -1,0 +1,113 @@
+.header-container {
+  position: relative;
+  width: 100%;
+  height: calc(25% - 20px - 12.5px);
+  overflow: hidden;
+  display: flex;
+}
+
+.event-logo {
+  height: 120px;
+  width: 120px;
+}
+@media only screen and (max-width: 990px) {
+  .event-logo {
+    height: 100px;
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .event-logo {
+    height: 64px;
+    width: 64px;
+  }
+}
+
+.event-countdown-text {
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-countdown-text .top {
+  display: flex;
+  align-items: flex-end;
+  max-height: 50%;
+  margin-left: 20px;
+}
+.event-countdown-text .bottom {
+  display: flex;
+  align-items: flex-start;
+  max-height: 50%;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+/*.event-countdown-text .top span {
+  font-size: 2rem;
+  font-weight: 500;
+} 
+.event-countdown-text .bottom span {
+  font-size: 1.5rem;
+}*/
+.event-countdown-text .top span {
+  font-size: 24px;
+  font-weight: 500;
+}
+.event-countdown-text .bottom span {
+  font-size: 24px;
+  font-weight: 500;
+}
+/* .event-countdown-text .bottom span:nth-child(1){
+  font-weight: initial;
+} */
+.event-countdown-text .bottom .text-time {
+  background: #00aeef;
+  color: white;
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+
+@media only screen and (max-width: 990px) {
+  .header-container {
+    height: fit-content;
+  }
+  .event-countdown-text .top span {
+    font-size: 1.8rem;
+  }
+  .event-countdown-text .bottom span {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-container {
+    height: fit-content;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .event-countdown-text .top span {
+    font-size: 16px;
+  }
+  .event-countdown-text .bottom span {
+    font-size: 12px;
+  }
+  .event-countdown-text .bottom .text-time {
+    padding: 0px 3px;
+  }
+}
+
+
+@media only screen and (max-width: 320px) {
+  .event-countdown-text .top span {
+    font-size: 15px;
+  }
+  .event-countdown-text .bottom span {
+    font-size: 11px;
+  }
+  .event-countdown-text .bottom .text-time {
+    padding: 0px 3px;
+  }
+}
