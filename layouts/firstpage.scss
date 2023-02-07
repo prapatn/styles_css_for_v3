@@ -1,0 +1,308 @@
+$phoneV: 320px;
+$phoneH: 812px;
+$ipadV: 820px;
+$ipadH: 1180px;
+$desktop1280: 1280px;
+$desktop1440: 1440px;
+
+.first-page-all-provinces2 {
+  align-items: center;
+  justify-items: center;
+
+
+  @media screen and (min-width: $phoneV) {
+    .row {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+
+      .columnProvince {
+        justify-content: center;
+      }
+      @media screen and (max-height: 580px) {
+        .columnLogo {
+          margin-bottom: 8px;
+        }
+        .logo {
+          display: block;
+          align-items: center;
+          .logo-img {
+            margin-top: 10px;
+            // width: 236px;
+            height: 40px;
+          }
+  
+          .title-logo {
+            font-size: 12px;
+            padding-top: 6px;
+            line-height: 10px;
+            color: #828282;
+            font-weight: 400;
+          }
+  
+          .subtitle-logo {
+            font-size: 12px;
+            line-height: 20px;
+            color: #828282;
+            font-weight: 400;
+          }
+  
+          @media screen and (min-width: $ipadV) {
+  
+            .title-logo {
+              font-size: 48px;
+              padding-top: 9px;
+              line-height: 72.58px;
+              color: #828282;
+              font-weight: 500;
+            }
+  
+            .subtitle-logo {
+              font-size: 28px;
+              line-height: 42.34px;
+              color: #828282;
+              font-weight: 400;
+            }
+          }
+  
+        }
+      }
+      @media screen and (min-height: 581px) {
+        .columnLogo {
+          margin-bottom: 21px;
+        }
+        .logo {
+          display: block;
+          align-items: center;
+          .logo-img {
+            margin-top: 30px;
+            width: 236px;
+            height: 79px;
+          }
+
+          .title-logo {
+            font-size: 16px;
+            padding-top: 12px;
+            line-height: 24.19px;
+            color: #828282;
+            font-weight: 400;
+          }
+
+          .subtitle-logo {
+            font-size: 16px;
+            line-height: 24.19px;
+            color: #828282;
+            font-weight: 400;
+          }
+
+          @media screen and (min-width: $ipadV) {
+
+            .title-logo {
+              font-size: 48px;
+              padding-top: 9px;
+              line-height: 72.58px;
+              color: #828282;
+              font-weight: 500;
+            }
+
+            .subtitle-logo {
+              font-size: 28px;
+              line-height: 42.34px;
+              color: #828282;
+              font-weight: 400;
+            }
+          }
+
+        }
+      }
+      .main {
+        text-align: center;
+        position: relative;
+        color: #fff;
+
+        @media screen and (min-width: $phoneV) {
+          .imgProvince {
+            margin: 8px 10px;
+            border-bottom: 1px solid #FFFFFF;
+            border-radius: 10px;
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+          }
+
+          ._btn {
+            background-color: #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+
+            .titleProvince {
+              font-size: 24px;
+              margin: 4px 2px;
+              line-height: 36.29px;
+            }
+          }
+
+          ._btnComing {
+            background-color: #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+
+            .titleProvince {
+              font-size: 24px;
+              margin: 4px 2px;
+              line-height: 36.29px;
+            }
+          }
+        }
+
+        @media screen and (min-width: $ipadV) {
+          .imgProvince {
+            margin: 8px;
+            border-bottom: 1px solid #FFFFFF;
+            border-radius: 10px;
+            width: 374px;
+            height: 208px;
+          }
+
+          ._btn {
+            background-color: #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+
+            .titleProvince {
+              font-size: 1.5rem;
+              margin: 4px 8px;
+              padding: 4px 8px;
+            }
+          }
+
+          ._btnComing {
+            background-color: #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+
+            .titleProvince {
+              font-size: 1.5rem;
+              margin: 4px 8px;
+              padding: 4px 8px;
+            }
+          }
+
+          ._btn:hover {
+            background-color: #00AEEF;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $ipadH) {
+    .row {
+      align-items: center;
+      height: 100vh;
+      .logo {
+        .logo-img {
+          margin-top: 30px;
+          width: 236px;
+          height: 79px;
+        }
+
+        .title-logo {
+          font-size: 30px;
+          padding-top: 22px;
+          line-height: 24.19px;
+          color: #828282;
+          font-weight: 400;
+        }
+
+        .subtitle-logo {
+          font-size: 20px;
+          padding-top: 12px;
+          line-height: 30px;
+          color: #828282;
+          font-weight: 400;
+        }
+      }
+
+    }
+  }
+
+  @media screen and (min-width: $desktop1280) {
+    .row {
+      //     align-items: center;
+      //     justify-content: center;
+      //     text-align: center;
+
+      .columnLogo {
+        padding-left: 32px;
+      }
+
+      .columnProvince {
+        justify-content: end;
+        padding-right: 24px;
+      }
+
+      .logo {
+        .logo-img {
+          margin-top: 30px;
+          width: 375px !important;
+          height: 132px !important;
+          }
+
+        .title-logo {
+          font-size: 48px;
+          padding-top: 12px;
+          line-height: 72.58px;
+          color: #828282;
+          font-weight: 400;
+        }
+
+        .subtitle-logo {
+          font-size: 28px;
+          padding-top: 0;
+          line-height: 42.34px;
+          color: #828282;
+          font-weight: 400;
+        }
+      }
+
+    }
+
+    @media screen and (min-width: $desktop1440) {
+      .row {
+        .columnLogo {
+          padding-left: 80px;
+        }
+
+        .columnProvince {
+          padding-left: 0;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

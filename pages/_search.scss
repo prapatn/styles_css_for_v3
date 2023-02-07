@@ -1,0 +1,115 @@
+.filter-bar {
+  .dropdown {
+    ul {
+      padding: 0.5rem 0;
+    }
+
+    ul > div {
+      .custom-control.custom-checkbox {
+        padding: 0.5rem 1rem;
+        padding-left: 2.5rem;
+      }
+    }
+
+    .price-form {
+      width: 30rem;
+      padding: 0.5rem 1rem;
+    }
+
+    .zone-form {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  .dropdown-item {
+    padding: 0.5rem 1rem;
+  }
+  .dropdown-menu {
+    min-width: 15rem;
+  }
+}
+
+.show-filter-area {
+  &.show {
+    padding: 0.5rem 0;
+    min-width: 100vh;
+    max-height: 100vh;
+    padding: 0.5rem 1rem;
+  }
+}
+.show-filter-area2 {
+  &.show {
+    padding: 0.5rem 0;
+    min-width: 70vh;
+    max-height: 100vh;
+    padding: 0.5rem 1rem;
+  }
+}
+.show-filter-price {
+  width: 30rem;
+  padding: 0.5rem 1rem;
+}
+.show-filter-price2 {
+  width: 20rem;
+  padding: 0.5rem 1rem;
+}
+.nuxt-link-active {
+  color: #333;
+}
+ul {
+  li {
+    &.nav-custom-tab {
+      a {
+        color: #999;
+        text-decoration: none;
+        background-color: transparent;
+      }
+      a:hover {
+        color: #999;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.s {
+  &__pd-header {
+    @media screen and (min-width: 768px) {
+      // padding: 0px 10rem;
+    }
+  }
+  &__header-section {
+    color: #999999 !important;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #999999 !important;
+    line-height: 0.01em;
+    margin: 10px 0 20px;
+    .text-header-section {
+      font-size: 1.5rem;
+      font-family: Prompt, Tahoma;
+      @media screen and (max-width: 767px) {
+        font-size: 30px !important;
+      }
+      background: #fff;
+      padding: 0 10px;
+    }
+    .text-header-commings {
+      font-family: Prompt, Tahoma;
+      font-size: 1.5rem;
+      @media screen and (max-width: 767px) {
+        font-size: 20px !important;
+      }
+      background: #fff;
+      padding: 0 10px;
+    }
+  }
+  .text-header-section {
+    font-size: 1.5rem;
+    font-family: Prompt, Tahoma;
+    @media screen and (max-width: 767px) {
+      font-size: 30px !important;
+    }
+    background: #fff;
+    padding: 0 10px;
+  }
+}

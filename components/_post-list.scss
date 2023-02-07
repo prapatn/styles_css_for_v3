@@ -1,0 +1,13 @@
+.post-list {
+  &--item {
+    width: 183px;
+    height: 103px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+  }
+  &--detail {
+    width: calc(100% - 189px);
+  }
+}
