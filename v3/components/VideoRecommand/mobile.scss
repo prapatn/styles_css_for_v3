@@ -1,0 +1,106 @@
+.blue-line {
+  width: 2px;
+  height: 100%;
+  background-color: #00AEEF;
+}
+
+.video-title{
+  font-size: 24px;
+  font-weight: 500;
+  color: #4C575C;
+  @media screen and (max-width: 576px) {
+    font-size: 16px;
+  } 
+  .title-blue {
+    color: #00AEEF;
+  }
+  .title-green {
+    color: #1BB967;
+  }
+}
+
+.video-sub {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4C575C;
+  @media screen and (max-width: 576px) {
+    font-size: 16px;
+  } 
+}
+
+.youtube-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.view-all {
+  font-size: 16px;
+  font-weight: 400;
+  color: #00AEEF;
+  cursor: pointer;
+  @media screen and (max-width: 576px) {
+    font-size: 12px;
+  } 
+}
+
+.video-post-title {
+  font-size: 12px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.post-btn {
+  background-color: #00AEEF;
+  border-color: transparent;
+  font-size: 14px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 99px;
+  &:active {
+    background-color: #00AEEF !important;
+    border-color: transparent !important;
+  }
+  &:hover {
+    background-color: #00AEEF !important;
+    border-color: transparent !important;
+  }
+}
+
+.vdo-image {
+  aspect-ratio: 16/9;
+}
+
+.prefic-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 4px;
+  border: none; 
+}
+
+.pagi {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 12px;
+  .ball {
+    border-radius: 50%;
+    background-color: #cceffc;
+    width: 7px;
+    height: 7px;
+  }
+  .ball-active {
+    border-radius: 50%;
+    background-color: #00aeef;
+    width: 7px;
+    height: 7px;
+  }
+}
