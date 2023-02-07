@@ -1,0 +1,203 @@
+.form-group {
+  position: relative;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+
+  &.error {
+    .form-control {
+      border-color: map-get($colors, 'red');
+    }
+  }
+}
+
+.form-control {
+  padding: 0.75rem 1rem;
+  height: auto;
+}
+
+.input-password {
+  position: relative;
+
+  .toggle-icon {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    bottom: 0;
+    height: 1.5rem;
+    margin: auto;
+  }
+
+  input {
+    padding-right: 1.5rem;
+  }
+}
+
+input[type='radio'] {
+  font-weight: 500;
+}
+
+input[type='text'],
+input[type='password'],
+textarea,
+.form-control {
+  height: 56px;
+  background: #ffffff;
+  border: 1px solid map-get($colors, 'light-grey');
+  box-sizing: border-box;
+  border-radius: 2px;
+  box-shadow: none;
+  outline: none;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content
+  }
+
+  &:-moz-placeholder {
+    @content
+  }
+
+  &::-moz-placeholder {
+    @content
+  }
+
+  &:-ms-input-placeholder {
+    @content
+  }
+}
+
+.input-phone-number {
+
+  input[type='text'],
+  .form-control {
+    height: 56px;
+    background: #ffffff;
+    border: 1px solid map-get($colors, 'light-grey');
+    box-sizing: border-box;
+    border-radius: 2px;
+    box-shadow: none;
+    outline: none;
+
+    @include placeholder {
+      color: map-get($colors, 'medium-grey');
+      font-weight: 300;
+    }
+  }
+}
+
+textarea {
+  min-height: 112px;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+textarea:focus,
+.form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 16px;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.5;
+  font-size: 1rem;
+  background-color: map-get($colors, 'white');
+  padding: 0 4px;
+  left: 12px;
+  opacity: 1;
+  cursor: text;
+  color: map-get($colors, 'dark-grey');
+}
+
+.project-reference-secondhand .form-control-placeholder-secondhand {
+  position: absolute;
+  top: 10px;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.5;
+  font-size: 1rem;
+  background-color: #ffffff00;
+  padding: 0 4px;
+  left: -1px;
+  opacity: 1;
+  cursor: text;
+  color: map-get($colors, 'dark-grey');
+}
+
+.form-control:focus,
+.form-control:valid,
+.form-control:read-only {
+  &+.form-control-placeholder {
+    font-size: 75%;
+    transform: translate3d(0, -128%, 0);
+    opacity: 1;
+    border-color: map-get($colors, 'blue');
+    color: map-get($colors, 'blue');
+  }
+}
+
+.form-control:not(:focus):valid {
+  &+.form-control-placeholder {
+    color: map-get($colors, 'dark-grey');
+  }
+}
+
+.form-control:not(.first-time):required:invalid,
+.form-control:not(.first-time).error {
+  border-color: map-get($colors, 'red');
+
+  &+.form-control-placeholder {
+    color: map-get($colors, 'red');
+  }
+}
+
+.b-form-datepicker {
+  height: 56px !important;
+
+  .btn {
+    padding: 0 0 0 15px;
+  }
+
+  label.form-control {
+    padding: 1rem 0.75rem;
+    min-height: unset;
+  }
+}
+
+select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('/img/br_down.png') white no-repeat calc(100% - 1rem) !important;
+  /* Better placement regardless of input width */
+}
+
+select:disabled {
+  background-color: map-get($colors, 'light-grey') !important;
+}
+
+.was-validated .custom-control-input:valid~.custom-control-label,
+.custom-control-input.is-valid~.custom-control-label {
+  color: map-get($colors, 'black');
+
+  &::before {
+    border-color: map-get($colors, 'dark-grey');
+    background-color: initial;
+  }
+}
+
+.was-validated .custom-control-input:valid:checked~.custom-control-label::before,
+.custom-control-input.is-valid:checked~.custom-control-label::before {
+  border-color: map-get($colors, 'dark-grey');
+  background-color: map-get($colors, 'primary-blue');
+}
+
+.hide-tab {
+  & ul.nav-tabs {
+    display: none;
+  }
+}
