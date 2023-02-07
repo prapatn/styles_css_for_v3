@@ -3,31 +3,33 @@
 // The variables you want to modify
 // $font-size-root: 20px;
 
-@each $name,
-$code in $colors {
+.text-super-blue {
+  color: #1D8CB9 !important;
+}
+
+@each $name, $code in $colors {
   .text-#{$name} {
-    color: $code  !important;
+    color: $code !important;
   }
 
   .bg-#{$name} {
-    background-color: $code  !important;
+    background-color: $code !important;
   }
 
   .border-#{$name} {
-    border-color: $code  !important;
+    border-color: $code !important;
   }
 }
 
-@each $name,
-$gradient in $gradients {
+@each $name, $gradient in $gradients {
   .bggd-#{$name} {
-    background: $gradient  !important;
+    background: $gradient !important;
   }
 }
 
 @each $font-weight in $font-weights {
   .fw-#{$font-weight} {
-    font-weight: $font-weight  !important;
+    font-weight: $font-weight !important;
   }
 }
 
@@ -37,30 +39,23 @@ $gradient in $gradients {
   }
 }
 
-@each $size,
-$length in $custom-lengths {
-
-  @each $prop,
-  $abbrev in (margin: m, padding: p) {
+@each $size, $length in $custom-lengths {
+  @each $prop, $abbrev in (margin: m, padding: p) {
     .#{$abbrev}-#{$size} {
       #{$prop}: $length;
     }
-
     .#{$abbrev}t-#{$size},
     .#{$abbrev}y-#{$size} {
       #{$prop}-top: $length;
     }
-
     .#{$abbrev}r-#{$size},
     .#{$abbrev}x-#{$size} {
       #{$prop}-right: $length;
     }
-
     .#{$abbrev}l-#{$size},
     .#{$abbrev}x-#{$size} {
       #{$prop}-left: $length;
     }
-
     .#{$abbrev}b-#{$size},
     .#{$abbrev}y-#{$size} {
       #{$prop}-bottom: $length;
@@ -100,18 +95,13 @@ h6 {
   font-weight: 500;
   line-height: 150%;
 }
-
-@each $h,
-$size in $head-lines {
-
+@each $h, $size in $head-lines {
   #{$h},
   .#{$h} {
     font-size: $size;
   }
 }
-
-@each $h,
-$size in $height-head-lines {
+@each $h, $size in $height-head-lines {
   .h-#{$h} {
     height: $size;
   }
@@ -227,19 +217,15 @@ section {
   width: 100%;
   display: block;
   padding-top: 100%;
-
-  &.ratio-16-9 {
-    padding-top: 56.25% !important;
-  }
-
   &.ratio-4-3 {
     padding-top: 75% !important;
   }
-
+  &.ratio-16-9 {
+    padding-top: 56.25% !important;
+  }
   &.ratio-2-1 {
     padding-top: 50% !important;
   }
-
   &.ratio-32-9 {
     padding-top: 28.125% !important;
   }
@@ -256,18 +242,12 @@ section {
 .object-fit-cover {
   object-fit: cover;
 }
-
-.object-fit-fill {
-  object-fit: fill;
-}
-
 .object-fit-contain {
   object-fit: contain;
 }
 
 .scroll-container {
   overflow: auto;
-
   @media (max-width: 577px) {
     margin-right: -0.99rem;
   }
@@ -287,7 +267,6 @@ section {
   margin-bottom: 0;
   bottom: -2rem;
 }
-
 .carousel-indicators li {
   width: 8px;
   height: 8px;
@@ -316,7 +295,6 @@ section {
       left: 0.25rem;
     }
   }
-
   .logo-icon {
     position: absolute;
     bottom: -1.25rem;
@@ -340,7 +318,6 @@ section {
       height: 2rem;
     }
   }
-
   .wishlist-icon {
     position: absolute;
     top: 0.5rem;
@@ -378,7 +355,6 @@ section {
       }
     }
   }
-
   .center-icon {
     position: absolute;
     top: 0;
@@ -387,7 +363,6 @@ section {
     right: 0;
     margin: auto;
   }
-
   .bottom-caption {
     position: absolute;
     bottom: 0;
@@ -396,11 +371,12 @@ section {
     padding: 0.5rem;
     font-size: 0.75rem;
     color: map-get($colors, 'white');
-    background: linear-gradient(180deg,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
   }
-
   .bottom-badge {
     position: absolute;
     bottom: 0;
@@ -454,7 +430,7 @@ section {
   padding-top: 80px;
 }
 
-section.page>.container:first-child {
+section.page > .container:first-child {
   margin-top: 2.5rem;
 }
 
@@ -581,21 +557,17 @@ button:focus {
 .when-open {
   display: block;
 }
-
 .when-closed {
   display: none;
 }
-
 .collapsed {
   .when-open {
     display: none;
   }
-
   .when-closed {
     display: block;
   }
 }
-
 .collapse-districts {
   position: absolute;
   padding: 0.75rem;
@@ -644,19 +616,16 @@ button:focus {
       color: map-get($colors, 'white');
       background-color: map-get($colors, 'primary-blue');
     }
-
     &:hover {
       cursor: pointer;
     }
   }
 }
-
 .collapse-districts-mobile {
   @include media-breakpoint-down(xs) {
     height: auto;
   }
 }
-
 /* RESPONSIVE - MEDIA SIZES */
 
 @media (max-width: 767px) {
@@ -673,33 +642,26 @@ button:focus {
     }
   }
 
-  @each $size,
-  $length in $custom-lengths {
-
-    @each $prop,
-    $abbrev in (margin: m, padding: p) {
+  @each $size, $length in $custom-lengths {
+    @each $prop, $abbrev in (margin: m, padding: p) {
       .#{$abbrev}-sm-#{$size} {
-        #{$prop}: $length  !important;
+        #{$prop}: $length !important;
       }
-
       .#{$abbrev}t-sm-#{$size},
       .#{$abbrev}y-sm-#{$size} {
-        #{$prop}-top: $length  !important;
+        #{$prop}-top: $length !important;
       }
-
       .#{$abbrev}r-sm-#{$size},
       .#{$abbrev}x-sm-#{$size} {
-        #{$prop}-right: $length  !important;
+        #{$prop}-right: $length !important;
       }
-
       .#{$abbrev}l-sm-#{$size},
       .#{$abbrev}x-sm-#{$size} {
-        #{$prop}-left: $length  !important;
+        #{$prop}-left: $length !important;
       }
-
       .#{$abbrev}b-sm-#{$size},
       .#{$abbrev}y-sm-#{$size} {
-        #{$prop}-bottom: $length  !important;
+        #{$prop}-bottom: $length !important;
       }
     }
   }
@@ -719,33 +681,26 @@ button:focus {
     height: 11.5rem;
   }
 
-  @each $size,
-  $length in $custom-lengths {
-
-    @each $prop,
-    $abbrev in (margin: m, padding: p) {
+  @each $size, $length in $custom-lengths {
+    @each $prop, $abbrev in (margin: m, padding: p) {
       .#{$abbrev}-md-#{$size} {
-        #{$prop}: $length  !important;
+        #{$prop}: $length !important;
       }
-
       .#{$abbrev}t-md-#{$size},
       .#{$abbrev}y-md-#{$size} {
-        #{$prop}-top: $length  !important;
+        #{$prop}-top: $length !important;
       }
-
       .#{$abbrev}r-md-#{$size},
       .#{$abbrev}x-md-#{$size} {
-        #{$prop}-right: $length  !important;
+        #{$prop}-right: $length !important;
       }
-
       .#{$abbrev}l-md-#{$size},
       .#{$abbrev}x-md-#{$size} {
-        #{$prop}-left: $length  !important;
+        #{$prop}-left: $length !important;
       }
-
       .#{$abbrev}b-md-#{$size},
       .#{$abbrev}y-md-#{$size} {
-        #{$prop}-bottom: $length  !important;
+        #{$prop}-bottom: $length !important;
       }
     }
   }
@@ -760,33 +715,26 @@ button:focus {
     }
   }
 
-  @each $size,
-  $length in $custom-lengths {
-
-    @each $prop,
-    $abbrev in (margin: m, padding: p) {
+  @each $size, $length in $custom-lengths {
+    @each $prop, $abbrev in (margin: m, padding: p) {
       .#{$abbrev}-lg-#{$size} {
-        #{$prop}: $length  !important;
+        #{$prop}: $length !important;
       }
-
       .#{$abbrev}t-lg-#{$size},
       .#{$abbrev}y-lg-#{$size} {
-        #{$prop}-top: $length  !important;
+        #{$prop}-top: $length !important;
       }
-
       .#{$abbrev}r-lg-#{$size},
       .#{$abbrev}x-lg-#{$size} {
-        #{$prop}-right: $length  !important;
+        #{$prop}-right: $length !important;
       }
-
       .#{$abbrev}l-lg-#{$size},
       .#{$abbrev}x-lg-#{$size} {
-        #{$prop}-left: $length  !important;
+        #{$prop}-left: $length !important;
       }
-
       .#{$abbrev}b-lg-#{$size},
       .#{$abbrev}y-lg-#{$size} {
-        #{$prop}-bottom: $length  !important;
+        #{$prop}-bottom: $length !important;
       }
     }
   }
@@ -801,49 +749,37 @@ button:focus {
     }
   }
 
-  @each $size,
-  $length in $custom-lengths {
-
-    @each $prop,
-    $abbrev in (margin: m, padding: p) {
+  @each $size, $length in $custom-lengths {
+    @each $prop, $abbrev in (margin: m, padding: p) {
       .#{$abbrev}-xl-#{$size} {
-        #{$prop}: $length  !important;
+        #{$prop}: $length !important;
       }
-
       .#{$abbrev}t-xl-#{$size},
       .#{$abbrev}y-xl-#{$size} {
-        #{$prop}-top: $length  !important;
+        #{$prop}-top: $length !important;
       }
-
       .#{$abbrev}r-xl-#{$size},
       .#{$abbrev}x-xl-#{$size} {
-        #{$prop}-right: $length  !important;
+        #{$prop}-right: $length !important;
       }
-
       .#{$abbrev}l-xl-#{$size},
       .#{$abbrev}x-xl-#{$size} {
-        #{$prop}-left: $length  !important;
+        #{$prop}-left: $length !important;
       }
-
       .#{$abbrev}b-xl-#{$size},
       .#{$abbrev}y-xl-#{$size} {
-        #{$prop}-bottom: $length  !important;
+        #{$prop}-bottom: $length !important;
       }
     }
   }
 }
 
 pre {
-  white-space: pre-wrap;
-  /* Since CSS 2.1 */
-  white-space: -moz-pre-wrap;
-  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;
-  /* Opera 4-6 */
-  white-space: -o-pre-wrap;
-  /* Opera 7 */
-  word-wrap: break-word;
-  /* Internet Explorer 5.5+ */
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
 .font-icon {
