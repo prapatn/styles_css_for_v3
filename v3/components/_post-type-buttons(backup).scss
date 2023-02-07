@@ -1,0 +1,80 @@
+.menu-post-types-section {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  .post-type-btn {
+    width: 175px;
+    height: 146px;
+    box-shadow: 0px 2.73723px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9.12409px;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 0.5rem;
+    color: #000000;
+    @include media-breakpoint-only(xs) {
+      width: auto;
+      height: auto;
+      font-size: 7px;
+      border-radius: 5px;
+      margin: 0.15rem;
+      padding-bottom: 0px;
+      img {
+        width: 22.81px !important;
+        height: 22.81px !important;
+      }
+    }
+    @include media-breakpoint-only(sm) {
+      width: auto;
+      max-width: 175px;
+      height: auto;
+      font-size: 12px;
+      border-radius: 8px;
+      margin: 0.25rem;
+      padding-bottom: 5px;
+      img {
+        width: 36.81px !important;
+        height: 36.81px !important;
+      }
+    }
+  }
+  div.post-type-btn:hover {
+    &.home-hover {
+      background-color: #00aeef !important;
+      color: #ffffff;
+      img {
+        -webkit-filter: brightness(0) invert(1);
+        filter: brightness(0) invert(1);
+      }
+    }
+    &.home2-hover {
+      background-color: #0089bd !important;
+      color: #ffffff;
+      img {
+        -webkit-filter: brightness(0) invert(1);
+        filter: brightness(0) invert(1);
+      }
+    }
+    &.apartment-hover {
+      background-color: #1bb967 !important;
+      color: #ffffff;
+      img {
+        -webkit-filter: brightness(0) invert(1);
+        filter: brightness(0) invert(1);
+      }
+    }
+    &.builder-hover {
+      background-color: #ff747b !important;
+      color: #ffffff;
+      img {
+        -webkit-filter: brightness(0) invert(1);
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+}

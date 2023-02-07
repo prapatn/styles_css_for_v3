@@ -1,0 +1,73 @@
+.slick-prev,
+.slick-next {
+  &::before {
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #333333 !important;
+  }
+}
+
+.next-visible-slick {
+  overflow: hidden;
+
+  .slick-prev,
+  .slick-next {
+    z-index: 2;
+    width: 38px;
+    height: 38px;
+    padding: 2px 2px 1px;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 100%;
+  }
+  .slick-prev {
+    left: 0.25rem;
+  }
+  .slick-next {
+    right: 0.25rem;
+  }
+  .slick-disabled {
+    display: none !important;
+  }
+
+  .slick-list {
+    width: 90%;
+    overflow: visible !important;
+  }
+
+  .visible-20 {
+    .slick-list {
+      width: 80%;
+    }
+  }
+  .visible-30 {
+    .slick-list {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 577px) {
+    margin-right: -0.99rem;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .next-visible-slick-md {
+    overflow: hidden;
+
+    .slick-list {
+      width: 90%;
+      overflow: visible;
+    }
+
+    .visible-20 {
+      .slick-list {
+        width: 80%;
+      }
+    }
+    .visible-30 {
+      .slick-list {
+        width: 70%;
+      }
+    }
+  }
+}
