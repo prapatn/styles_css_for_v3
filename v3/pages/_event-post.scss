@@ -1,0 +1,257 @@
+.event-post-w-fit {
+  width: fit-content;
+}
+.text-event-post-blue {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 2px 2px 0 #005171,
+    -2px 2px 0 #005171,
+    2px -2px 0 #005171,
+    -2px -2px 0 #005171,
+    0px 2px 0 #005171,
+    0px -2px 0 #005171,
+    -2px 0px 0 #005171,
+    2px 0px 0 #005171,
+    3px 3px 0 #005171,
+    -3px 3px 0 #005171,
+    3px -3px 0 #005171,
+    -3px -3px 0 #005171,
+    0px 3px 0 #005171,
+    0px -3px 0 #005171,
+    -3px 0px 0 #005171,
+    3px 0px 0 #005171,
+    2px 3px 0 #005171,
+    -2px 3px 0 #005171,
+    2px -3px 0 #005171,
+    -2px -3px 0 #005171,
+    3px 2px 0 #005171,
+    -3px 2px 0 #005171,
+    3px -2px 0 #005171,
+    -3px -2px 0 #005171;
+  color: white;
+  @media only screen and (max-width: 992px) {
+    font-size: 16px;
+  }
+}
+.main-event-post-container {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  @media only screen and (min-width: 1200px) {
+    max-width: 1188px
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    max-width: 960px
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    max-width: 720px
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    max-width: 540px
+  }
+}
+.event-post-container {
+  padding-bottom: 35px;
+  @media only screen and (max-width: 992px) {
+    padding-bottom: 30px;
+  }
+  .see-post-all {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid #00AEEF;
+    padding-top: 24px;
+    margin-top: 48px;
+    @media only screen and (max-width: 992px) {
+      margin-top: 32px;
+    }
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 376px;
+      height: 48px;
+      background: linear-gradient(180deg, #F2692D 0%, #FF8A09 100%);
+      border-radius: 10px;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      &:hover {
+        opacity: 0.9;
+      }
+      @media only screen and (max-width: 992px) {
+        width: 258px;
+        height: 40px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+      }
+    }
+    &-icon {
+      display: flex;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: white;
+    }
+  }
+}
+.bg-event-post-blue {
+  position: relative;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background: radial-gradient(50% 10368% at 50% 50.04%, #00AEEF 0%, #0089BD 100%);
+  margin-bottom: 55px;
+  @media only screen and (max-width: 992px) {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background: linear-gradient(90deg, rgba(0,174,239,1) 0%, rgba(0,137,189,1) 100%);
+    margin-bottom: 50px;
+  }
+  &-band-mobile {
+    position: absolute;
+    background: url('/event/graphics/band.png') no-repeat;
+    width: 100%;
+    height: 61px;
+    left: 0;
+    bottom: -50px;
+    background-size: 100% 100%;
+    background-position: left 0px;
+  }
+  &-band-desktop {
+    position: absolute;
+    background: url('/event/graphics/band-lg.png') no-repeat;
+    width: 100%;
+    height: 61px;
+    left: 0;
+    bottom: -50px;
+    background-size: 100% 100%;
+    background-position: left 0px;
+  }
+}
+.bg-event-post-sky {
+  padding-top: 85px;
+  padding-bottom: 35px;
+  background: linear-gradient(0deg, rgba(213,244,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 70%, rgba(213,244,255,1) 90%);
+  @media only screen and (max-width: 992px) {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+}
+.event-post {
+  &-top-post-layout {
+    .top-post-item {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 186, 255, 0.17) 100%), #FFFFFF;
+      @media only screen and (max-width: 992px) {
+        margin-top: 18px;
+      }
+      &-badge {
+        width: fit-content;
+        height: 84px;
+        top: -22px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        @media only screen and (max-width: 992px) {
+          top: -17px;
+        }
+        .title-badge {
+          position: relative;
+          text-align: center;
+          .title-text {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 32px;
+            font-weight: 500;
+            color: white;
+            @media only screen and (max-width: 992px) {
+              font-size: 26px;
+            }
+          }
+        }
+      }
+      &-posts {
+        margin: auto;
+        padding: 55px 8px 8px 8px;
+      }
+    }
+  }
+  &-top-post-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    margin-top: 12px;
+    width: 500px;
+    height: 60px;
+    background: linear-gradient(180deg, #F2692D 0%, #FF8A09 100%);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    &:hover {
+      opacity: 0.9;
+    }
+    @media only screen and (min-width: 993px) and (max-width: 1120px) {
+      width: 420px;
+    }
+    @media only screen and (max-width: 992px) {
+      margin-top: 15px;
+      background: linear-gradient(90deg, #FF8A09 0%, #F2692D 100%);
+      justify-content: space-evenly;
+      width: 219px;
+      height: 51px;
+    }
+  }
+  &-top-post-icon {
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: white;
+  }
+  &-show-more {
+    padding-bottom: 16px;
+    .show-more-btn {
+      display: flex;
+      width: 142px;
+      height: 37px;
+      align-items: center;
+      border: 1px solid #00AEEF;
+      border-radius: 7px;
+      background: white;
+      color: #00AEEF;
+      gap: 14px;
+      margin: auto auto auto auto;
+      padding: 16px 8px;
+      &:hover {
+        background: #00bbff28;
+      }
+      .show-more-icon {
+        svg {
+          fill: #00AEEF;
+        }
+      }
+    }
+  }
+}

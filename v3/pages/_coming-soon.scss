@@ -1,0 +1,129 @@
+.cs {
+  &__nayoo-logo-text {
+    font-weight: 700;
+    font-size: 0.8rem !important;
+    letter-spacing: 0.5px;
+    @include media-breakpoint-up(md) {
+      line-height: 2.4rem;
+      font-size: 1.3rem !important;
+      letter-spacing: normal;
+    }
+  }
+  &__desktop-layout {
+    @include media-breakpoint-up(md) {
+      //   border-radius: 5vh;
+      box-shadow: 0px 0px 50px #dfdfdf;
+      border-radius: 5vh !important;
+      //   border: 1px solid #ccc;
+      //   padding: 1rem 2rem;
+    }
+    .desktop-left-side {
+      padding: 1rem 2rem 1rem 2rem;
+      &.bg-left-gray {
+        @include media-breakpoint-up(md) {
+          // background-color: rgb(249, 249, 249);
+          border-radius: 5vh 0 0 5vh;
+        }
+      }
+      .text-head {
+        font-size: 16px;
+        font-weight: 600;
+        @include media-breakpoint-up(md) {
+          font-size: 18px;
+          // font-weight: 600;
+        }
+      }
+    }
+    .desktop-right-side {
+      padding: 1rem 4rem 1rem 4rem;
+      font-size: 18px;
+      line-height: 1.5;
+      .text-head {
+        font-size: 20px;
+      }
+    }
+  }
+  &__main-font {
+    font-family: Prompt, Tahoma;
+  }
+  &__avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    border: 1px solid #ebeceb;
+    @include media-breakpoint-up(md) {
+      width: 110px;
+      height: 110px;
+    }
+  }
+  &__nayoo-logo-image {
+    width: 35px;
+    height: 35px;
+    @include media-breakpoint-up(md) {
+      width: 55px;
+      height: 55px;
+    }
+  }
+  &__input {
+    &.form-control-sm {
+      height: 40px;
+    }
+    &.form-control {
+      &::-webkit-input-placeholder {
+        /* Edge */
+        color: #cccccc;
+      }
+      &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #cccccc;
+      }
+      &::placeholder {
+        color: #cccccc;
+      }
+    }
+  }
+  &__accept {
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+    }
+  }
+  &__post-link {
+    font-size: 14px;
+  }
+  &__botton-register {
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 60px;
+    border-radius: 20px;
+    &.__bg-grey {
+      background-color: #dfdfdf;
+    }
+    &.__bg-blue {
+      background-color: #00aeef;
+    }
+  }
+  &__brand-text-name {
+    @include media-breakpoint-up(md) {
+      line-height: 0.8rem;
+    }
+    line-height: 0.5rem;
+    .cs__text-nayoo-green {
+      margin-left: -5px;
+    }
+  }
+  &__image {
+    @include media-breakpoint-up(md) {
+      width: 65%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__description {
+    p {
+      font-family: Prompt, Tahoma;
+      font-weight: normal;
+    }
+  }
+}

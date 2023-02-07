@@ -1,0 +1,22 @@
+.fb-container-md {
+  max-width: 500px;
+  margin: auto;
+}
+.post-content {
+  width: 100%;
+
+  img {
+    max-width: 100% !important;
+    height: auto;
+  }
+
+  pre {
+    white-space: break-spaces !important;
+  }
+
+  iframe {
+    max-width: 100% !important;
+    margin: auto;
+    display: block;
+  }
+}
