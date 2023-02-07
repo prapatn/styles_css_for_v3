@@ -1,0 +1,15 @@
+@use "sass:map";
+
+@import 'common/variables';
+@import 'common/fonts';
+
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';
+
+@import 'common/global';
+
+@import 'components/search-box';
+@import 'components/st-btn-contact';
+@import 'components/chat-btn';
+@import 'events/event-default';
+@import 'components/header-post';

@@ -1,0 +1,35 @@
+.slick-block-padding {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  @include media-breakpoint-only(lg) {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+  @include media-breakpoint-only(xl) {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+  @include media-breakpoint-down(xl) {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+.slick-box-shadow {
+  box-shadow: 2px 3px 5px #ccc;
+  opacity: 1;
+}
+
+.slick-item-image {
+  @include media-breakpoint-up(md) {
+    // height: 6rem;
+  }
+  @include media-breakpoint-down(md) {
+    // height: 4rem;
+  }
+}

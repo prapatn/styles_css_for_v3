@@ -1,0 +1,25 @@
+table.b-table {
+  & thead th {
+    text-align: center;
+
+    &.header-center {
+      text-align: center !important;
+    }
+
+    &.action {
+      min-width: 113px;
+    }
+  }
+
+  .btn {
+    height: 24px;
+    line-height: 0.4rem;
+    min-width: 30px;
+    padding: 0;
+    font-size: 16px;
+
+    svg {
+      height: 22px;
+    }
+  }
+}
